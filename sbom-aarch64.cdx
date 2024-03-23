@@ -1,0 +1,511 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "components": [
+    {
+      "bom-ref": "pkg:oci/pixi@sha256%3Acca1ed99acf16bb1a512749b63b509142583ff5688396a159aeb37e388e4fff1?arch=arm64&mediaType=application%2Fvnd.oci.image.manifest.v1%2Bjson&os=linux",
+      "type": "container",
+      "name": "",
+      "version": "",
+      "description": "apko container image",
+      "purl": "pkg:oci/pixi@sha256%3Acca1ed99acf16bb1a512749b63b509142583ff5688396a159aeb37e388e4fff1?arch=arm64&mediaType=application%2Fvnd.oci.image.manifest.v1%2Bjson&os=linux",
+      "externalReferences": [
+        {
+          "url": "https://github.com/Quantco/pixi-apk-container.git@78097ed902cda9fc919f382f300e921dbe968207",
+          "type": "vcs"
+        }
+      ],
+      "components": [
+        {
+          "bom-ref": "pkg:oci/pixi@sha256%3A4f56e5813242df0b586d8d9dfc6b4fe35cd638e59735660bd25ac9ab242111df?arch=arm64&mediaType=application%2Fvnd.oci.image.manifest.v1%2Bjson&os=linux",
+          "type": "operating-system",
+          "name": "Alpine Linux",
+          "version": "3.20.0_alpha20240315",
+          "description": "apko OS layer",
+          "purl": "pkg:oci/pixi@sha256%3A4f56e5813242df0b586d8d9dfc6b4fe35cd638e59735660bd25ac9ab242111df?arch=arm64&mediaType=application%2Fvnd.oci.image.layer.v1.tar%2Bgzip&os=linux",
+          "components": [
+            {
+              "bom-ref": "pkg:apk/alpine/alpine-baselayout-data@3.6.2-r0?arch=aarch64",
+              "type": "operating-system",
+              "name": "alpine-baselayout-data",
+              "version": "3.6.2-r0",
+              "description": "Alpine base dir structure and init scripts",
+              "purl": "pkg:apk/alpine/alpine-baselayout-data@3.6.2-r0?arch=aarch64",
+              "licenses": [
+                {
+                  "expression": "GPL-2.0-only"
+                }
+              ]
+            },
+            {
+              "bom-ref": "pkg:apk/alpine/musl@1.2.5-r0?arch=aarch64",
+              "type": "operating-system",
+              "name": "musl",
+              "version": "1.2.5-r0",
+              "description": "the musl c library (libc) implementation",
+              "purl": "pkg:apk/alpine/musl@1.2.5-r0?arch=aarch64",
+              "licenses": [
+                {
+                  "expression": "MIT"
+                }
+              ]
+            },
+            {
+              "bom-ref": "pkg:apk/alpine/busybox@1.36.1-r21?arch=aarch64",
+              "type": "operating-system",
+              "name": "busybox",
+              "version": "1.36.1-r21",
+              "description": "Size optimized toolbox of many common UNIX utilities",
+              "purl": "pkg:apk/alpine/busybox@1.36.1-r21?arch=aarch64",
+              "licenses": [
+                {
+                  "expression": "GPL-2.0-only"
+                }
+              ]
+            },
+            {
+              "bom-ref": "pkg:apk/alpine/busybox-binsh@1.36.1-r21?arch=aarch64",
+              "type": "operating-system",
+              "name": "busybox-binsh",
+              "version": "1.36.1-r21",
+              "description": "busybox ash /bin/sh",
+              "purl": "pkg:apk/alpine/busybox-binsh@1.36.1-r21?arch=aarch64",
+              "licenses": [
+                {
+                  "expression": "GPL-2.0-only"
+                }
+              ]
+            },
+            {
+              "bom-ref": "pkg:apk/alpine/alpine-baselayout@3.6.2-r0?arch=aarch64",
+              "type": "operating-system",
+              "name": "alpine-baselayout",
+              "version": "3.6.2-r0",
+              "description": "Alpine base dir structure and init scripts",
+              "purl": "pkg:apk/alpine/alpine-baselayout@3.6.2-r0?arch=aarch64",
+              "licenses": [
+                {
+                  "expression": "GPL-2.0-only"
+                }
+              ]
+            },
+            {
+              "bom-ref": "pkg:apk/alpine/busybox-ifupdown@1.36.1-r21?arch=aarch64",
+              "type": "operating-system",
+              "name": "busybox-ifupdown",
+              "version": "1.36.1-r21",
+              "description": "placeholder package for busybox ifupdown",
+              "purl": "pkg:apk/alpine/busybox-ifupdown@1.36.1-r21?arch=aarch64",
+              "licenses": [
+                {
+                  "expression": "GPL-2.0-only"
+                }
+              ]
+            },
+            {
+              "bom-ref": "pkg:apk/alpine/libcap2@2.69-r1?arch=aarch64",
+              "type": "operating-system",
+              "name": "libcap2",
+              "version": "2.69-r1",
+              "description": "POSIX 1003.1e capabilities (libraries)",
+              "purl": "pkg:apk/alpine/libcap2@2.69-r1?arch=aarch64",
+              "licenses": [
+                {
+                  "expression": "BSD-3-Clause OR GPL-2.0-only"
+                }
+              ]
+            },
+            {
+              "bom-ref": "pkg:apk/alpine/openrc@0.53-r1?arch=aarch64",
+              "type": "operating-system",
+              "name": "openrc",
+              "version": "0.53-r1",
+              "description": "OpenRC manages the services, startup and shutdown of a host",
+              "purl": "pkg:apk/alpine/openrc@0.53-r1?arch=aarch64",
+              "licenses": [
+                {
+                  "expression": "BSD-2-Clause"
+                }
+              ]
+            },
+            {
+              "bom-ref": "pkg:apk/alpine/alpine-conf@3.17.2-r0?arch=aarch64",
+              "type": "operating-system",
+              "name": "alpine-conf",
+              "version": "3.17.2-r0",
+              "description": "Alpine configuration management scripts",
+              "purl": "pkg:apk/alpine/alpine-conf@3.17.2-r0?arch=aarch64",
+              "licenses": [
+                {
+                  "expression": "MIT"
+                }
+              ]
+            },
+            {
+              "bom-ref": "pkg:apk/alpine/alpine-keys@2.4-r1?arch=aarch64",
+              "type": "operating-system",
+              "name": "alpine-keys",
+              "version": "2.4-r1",
+              "description": "Public keys for Alpine Linux packages",
+              "purl": "pkg:apk/alpine/alpine-keys@2.4-r1?arch=aarch64",
+              "licenses": [
+                {
+                  "expression": "MIT"
+                }
+              ]
+            },
+            {
+              "bom-ref": "pkg:apk/alpine/alpine-release@3.20.0_alpha20240315-r0?arch=aarch64",
+              "type": "operating-system",
+              "name": "alpine-release",
+              "version": "3.20.0_alpha20240315-r0",
+              "description": "Alpine release data",
+              "purl": "pkg:apk/alpine/alpine-release@3.20.0_alpha20240315-r0?arch=aarch64",
+              "licenses": [
+                {
+                  "expression": "MIT"
+                }
+              ]
+            },
+            {
+              "bom-ref": "pkg:apk/alpine/ca-certificates-bundle@20240226-r0?arch=aarch64",
+              "type": "operating-system",
+              "name": "ca-certificates-bundle",
+              "version": "20240226-r0",
+              "description": "Pre generated bundle of Mozilla certificates",
+              "purl": "pkg:apk/alpine/ca-certificates-bundle@20240226-r0?arch=aarch64",
+              "licenses": [
+                {
+                  "expression": "MPL-2.0 AND MIT"
+                }
+              ]
+            },
+            {
+              "bom-ref": "pkg:apk/alpine/libcrypto3@3.2.1-r0?arch=aarch64",
+              "type": "operating-system",
+              "name": "libcrypto3",
+              "version": "3.2.1-r0",
+              "description": "Crypto library from openssl",
+              "purl": "pkg:apk/alpine/libcrypto3@3.2.1-r0?arch=aarch64",
+              "licenses": [
+                {
+                  "expression": "Apache-2.0"
+                }
+              ]
+            },
+            {
+              "bom-ref": "pkg:apk/alpine/libssl3@3.2.1-r0?arch=aarch64",
+              "type": "operating-system",
+              "name": "libssl3",
+              "version": "3.2.1-r0",
+              "description": "SSL shared libraries",
+              "purl": "pkg:apk/alpine/libssl3@3.2.1-r0?arch=aarch64",
+              "licenses": [
+                {
+                  "expression": "Apache-2.0"
+                }
+              ]
+            },
+            {
+              "bom-ref": "pkg:apk/alpine/zlib@1.3.1-r0?arch=aarch64",
+              "type": "operating-system",
+              "name": "zlib",
+              "version": "1.3.1-r0",
+              "description": "A compression/decompression Library",
+              "purl": "pkg:apk/alpine/zlib@1.3.1-r0?arch=aarch64",
+              "licenses": [
+                {
+                  "expression": "Zlib"
+                }
+              ]
+            },
+            {
+              "bom-ref": "pkg:apk/alpine/apk-tools@2.14.1-r0?arch=aarch64",
+              "type": "operating-system",
+              "name": "apk-tools",
+              "version": "2.14.1-r0",
+              "description": "Alpine Package Keeper - package manager for alpine",
+              "purl": "pkg:apk/alpine/apk-tools@2.14.1-r0?arch=aarch64",
+              "licenses": [
+                {
+                  "expression": "GPL-2.0-only"
+                }
+              ]
+            },
+            {
+              "bom-ref": "pkg:apk/alpine/mdev-conf@4.6-r0?arch=aarch64",
+              "type": "operating-system",
+              "name": "mdev-conf",
+              "version": "4.6-r0",
+              "description": "Configuration files for mdev and mdevd",
+              "purl": "pkg:apk/alpine/mdev-conf@4.6-r0?arch=aarch64",
+              "licenses": [
+                {
+                  "expression": "MIT"
+                }
+              ]
+            },
+            {
+              "bom-ref": "pkg:apk/alpine/busybox-mdev-openrc@1.36.1-r21?arch=aarch64",
+              "type": "operating-system",
+              "name": "busybox-mdev-openrc",
+              "version": "1.36.1-r21",
+              "description": "Size optimized toolbox of many common UNIX utilities",
+              "purl": "pkg:apk/alpine/busybox-mdev-openrc@1.36.1-r21?arch=aarch64",
+              "licenses": [
+                {
+                  "expression": "GPL-2.0-only"
+                }
+              ]
+            },
+            {
+              "bom-ref": "pkg:apk/alpine/busybox-openrc@1.36.1-r21?arch=aarch64",
+              "type": "operating-system",
+              "name": "busybox-openrc",
+              "version": "1.36.1-r21",
+              "description": "Size optimized toolbox of many common UNIX utilities",
+              "purl": "pkg:apk/alpine/busybox-openrc@1.36.1-r21?arch=aarch64",
+              "licenses": [
+                {
+                  "expression": "GPL-2.0-only"
+                }
+              ]
+            },
+            {
+              "bom-ref": "pkg:apk/alpine/busybox-suid@1.36.1-r21?arch=aarch64",
+              "type": "operating-system",
+              "name": "busybox-suid",
+              "version": "1.36.1-r21",
+              "description": "suid binaries of Busybox",
+              "purl": "pkg:apk/alpine/busybox-suid@1.36.1-r21?arch=aarch64",
+              "licenses": [
+                {
+                  "expression": "GPL-2.0-only"
+                }
+              ]
+            },
+            {
+              "bom-ref": "pkg:apk/alpine/scanelf@1.3.7-r2?arch=aarch64",
+              "type": "operating-system",
+              "name": "scanelf",
+              "version": "1.3.7-r2",
+              "description": "Scan ELF binaries for stuff",
+              "purl": "pkg:apk/alpine/scanelf@1.3.7-r2?arch=aarch64",
+              "licenses": [
+                {
+                  "expression": "GPL-2.0-only"
+                }
+              ]
+            },
+            {
+              "bom-ref": "pkg:apk/alpine/musl-utils@1.2.5-r0?arch=aarch64",
+              "type": "operating-system",
+              "name": "musl-utils",
+              "version": "1.2.5-r0",
+              "description": "the musl c library (libc) implementation",
+              "purl": "pkg:apk/alpine/musl-utils@1.2.5-r0?arch=aarch64",
+              "licenses": [
+                {
+                  "expression": "MIT AND BSD-2-Clause AND GPL-2.0-or-later"
+                }
+              ]
+            },
+            {
+              "bom-ref": "pkg:apk/alpine/ssl_client@1.36.1-r21?arch=aarch64",
+              "type": "operating-system",
+              "name": "ssl_client",
+              "version": "1.36.1-r21",
+              "description": "EXternal ssl_client for busybox wget",
+              "purl": "pkg:apk/alpine/ssl_client@1.36.1-r21?arch=aarch64",
+              "licenses": [
+                {
+                  "expression": "GPL-2.0-only"
+                }
+              ]
+            },
+            {
+              "bom-ref": "pkg:apk/alpine/alpine-base@3.20.0_alpha20240315-r0?arch=aarch64",
+              "type": "operating-system",
+              "name": "alpine-base",
+              "version": "3.20.0_alpha20240315-r0",
+              "description": "Meta package for minimal alpine base",
+              "purl": "pkg:apk/alpine/alpine-base@3.20.0_alpha20240315-r0?arch=aarch64",
+              "licenses": [
+                {
+                  "expression": "MIT"
+                }
+              ]
+            },
+            {
+              "bom-ref": "pkg:apk/alpine/libgcc@13.2.1_git20240309-r0?arch=aarch64",
+              "type": "operating-system",
+              "name": "libgcc",
+              "version": "13.2.1_git20240309-r0",
+              "description": "GNU C compiler runtime libraries",
+              "purl": "pkg:apk/alpine/libgcc@13.2.1_git20240309-r0?arch=aarch64",
+              "licenses": [
+                {
+                  "expression": "GPL-2.0-or-later AND LGPL-2.1-or-later"
+                }
+              ]
+            },
+            {
+              "bom-ref": "pkg:apk/alpine/pixi@0.17.1-r0?arch=aarch64",
+              "type": "operating-system",
+              "name": "pixi",
+              "version": "0.17.1-r0",
+              "description": "A package management and workflow tool",
+              "purl": "pkg:apk/alpine/pixi@0.17.1-r0?arch=aarch64",
+              "licenses": [
+                {
+                  "expression": "BSD-3-Clause"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:apk/alpine/alpine-baselayout-data@3.6.2-r0?arch=aarch64",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:apk/alpine/musl@1.2.5-r0?arch=aarch64",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:apk/alpine/busybox@1.36.1-r21?arch=aarch64",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:apk/alpine/busybox-binsh@1.36.1-r21?arch=aarch64",
+      "dependsOn": [
+        "pkg:apk/alpine/busybox?arch=aarch64"
+      ]
+    },
+    {
+      "ref": "pkg:apk/alpine/alpine-baselayout@3.6.2-r0?arch=aarch64",
+      "dependsOn": [
+        "pkg:apk/alpine/alpine-baselayout-data?arch=aarch64"
+      ]
+    },
+    {
+      "ref": "pkg:apk/alpine/busybox-ifupdown@1.36.1-r21?arch=aarch64",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:apk/alpine/libcap2@2.69-r1?arch=aarch64",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:apk/alpine/openrc@0.53-r1?arch=aarch64",
+      "dependsOn": [
+        "pkg:apk/alpine/ifupdown-any?arch=aarch64"
+      ]
+    },
+    {
+      "ref": "pkg:apk/alpine/alpine-conf@3.17.2-r0?arch=aarch64",
+      "dependsOn": [
+        "pkg:apk/alpine/openrc?arch=aarch64",
+        "pkg:apk/alpine/busybox?arch=aarch64"
+      ]
+    },
+    {
+      "ref": "pkg:apk/alpine/alpine-keys@2.4-r1?arch=aarch64",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:apk/alpine/alpine-release@3.20.0_alpha20240315-r0?arch=aarch64",
+      "dependsOn": [
+        "pkg:apk/alpine/alpine-keys?arch=aarch64"
+      ]
+    },
+    {
+      "ref": "pkg:apk/alpine/ca-certificates-bundle@20240226-r0?arch=aarch64",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:apk/alpine/libcrypto3@3.2.1-r0?arch=aarch64",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:apk/alpine/libssl3@3.2.1-r0?arch=aarch64",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:apk/alpine/zlib@1.3.1-r0?arch=aarch64",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:apk/alpine/apk-tools@2.14.1-r0?arch=aarch64",
+      "dependsOn": [
+        "pkg:apk/alpine/musl?arch=aarch64",
+        "pkg:apk/alpine/ca-certificates-bundle?arch=aarch64"
+      ]
+    },
+    {
+      "ref": "pkg:apk/alpine/mdev-conf@4.6-r0?arch=aarch64",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:apk/alpine/busybox-mdev-openrc@1.36.1-r21?arch=aarch64",
+      "dependsOn": [
+        "pkg:apk/alpine/openrc?arch=aarch64",
+        "pkg:apk/alpine/mdev-conf?arch=aarch64"
+      ]
+    },
+    {
+      "ref": "pkg:apk/alpine/busybox-openrc@1.36.1-r21?arch=aarch64",
+      "dependsOn": [
+        "pkg:apk/alpine/openrc?arch=aarch64"
+      ]
+    },
+    {
+      "ref": "pkg:apk/alpine/busybox-suid@1.36.1-r21?arch=aarch64",
+      "dependsOn": [
+        "pkg:apk/alpine/busybox?arch=aarch64"
+      ]
+    },
+    {
+      "ref": "pkg:apk/alpine/scanelf@1.3.7-r2?arch=aarch64",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:apk/alpine/musl-utils@1.2.5-r0?arch=aarch64",
+      "dependsOn": [
+        "pkg:apk/alpine/scanelf?arch=aarch64"
+      ]
+    },
+    {
+      "ref": "pkg:apk/alpine/ssl_client@1.36.1-r21?arch=aarch64",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:apk/alpine/alpine-base@3.20.0_alpha20240315-r0?arch=aarch64",
+      "dependsOn": [
+        "pkg:apk/alpine/alpine-baselayout?arch=aarch64",
+        "pkg:apk/alpine/alpine-conf?arch=aarch64",
+        "pkg:apk/alpine/alpine-release?arch=aarch64",
+        "pkg:apk/alpine/apk-tools?arch=aarch64",
+        "pkg:apk/alpine/busybox?arch=aarch64",
+        "pkg:apk/alpine/busybox-mdev-openrc?arch=aarch64",
+        "pkg:apk/alpine/busybox-openrc?arch=aarch64",
+        "pkg:apk/alpine/busybox-suid?arch=aarch64",
+        "pkg:apk/alpine/musl-utils?arch=aarch64",
+        "pkg:apk/alpine/openrc?arch=aarch64"
+      ]
+    },
+    {
+      "ref": "pkg:apk/alpine/libgcc@13.2.1_git20240309-r0?arch=aarch64",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:apk/alpine/pixi@0.17.1-r0?arch=aarch64",
+      "dependsOn": []
+    }
+  ]
+}
