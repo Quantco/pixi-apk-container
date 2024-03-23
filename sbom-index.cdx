@@ -1,0 +1,51 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "components": [
+    {
+      "bom-ref": "pkg:oci/pixi@sha256%3A2b757f19e15fe03fd04adafa5f00993ff8d870e98c7834ece3003ed824cc2164?mediaType=application%2Fvnd.oci.image.index.v1%2Bjson",
+      "type": "container",
+      "name": "sha256:2b757f19e15fe03fd04adafa5f00993ff8d870e98c7834ece3003ed824cc2164",
+      "version": "2b757f19e15fe03fd04adafa5f00993ff8d870e98c7834ece3003ed824cc2164",
+      "description": "Multi-arch image index",
+      "purl": "pkg:oci/pixi@sha256%3A2b757f19e15fe03fd04adafa5f00993ff8d870e98c7834ece3003ed824cc2164?mediaType=application%2Fvnd.oci.image.index.v1%2Bjson",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "2b757f19e15fe03fd04adafa5f00993ff8d870e98c7834ece3003ed824cc2164"
+        }
+      ],
+      "components": [
+        {
+          "bom-ref": "pkg:oci/pixi@sha256%3A9c493c017dbb760257778c965a073c86eeb71ec53b9eda2f46126a2f76dc1ead?arch=386&mediaType=application%2Fvnd.oci.image.manifest.v1%2Bjson&os=linux",
+          "type": "container",
+          "name": "sha256:9c493c017dbb760257778c965a073c86eeb71ec53b9eda2f46126a2f76dc1ead",
+          "version": "sha256:9c493c017dbb760257778c965a073c86eeb71ec53b9eda2f46126a2f76dc1ead",
+          "description": "apko image for linux/386",
+          "purl": "pkg:oci/pixi@sha256%3A9c493c017dbb760257778c965a073c86eeb71ec53b9eda2f46126a2f76dc1ead?arch=386&mediaType=application%2Fvnd.oci.image.manifest.v1%2Bjson&os=linux",
+          "hashes": [
+            {
+              "alg": "SHA-256",
+              "content": "9c493c017dbb760257778c965a073c86eeb71ec53b9eda2f46126a2f76dc1ead"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:oci/pixi@sha256%3Acca1ed99acf16bb1a512749b63b509142583ff5688396a159aeb37e388e4fff1?arch=arm64&mediaType=application%2Fvnd.oci.image.manifest.v1%2Bjson&os=linux",
+          "type": "container",
+          "name": "sha256:cca1ed99acf16bb1a512749b63b509142583ff5688396a159aeb37e388e4fff1",
+          "version": "sha256:cca1ed99acf16bb1a512749b63b509142583ff5688396a159aeb37e388e4fff1",
+          "description": "apko image for linux/arm64",
+          "purl": "pkg:oci/pixi@sha256%3Acca1ed99acf16bb1a512749b63b509142583ff5688396a159aeb37e388e4fff1?arch=arm64&mediaType=application%2Fvnd.oci.image.manifest.v1%2Bjson&os=linux",
+          "hashes": [
+            {
+              "alg": "SHA-256",
+              "content": "cca1ed99acf16bb1a512749b63b509142583ff5688396a159aeb37e388e4fff1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

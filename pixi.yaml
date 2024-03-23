@@ -1,0 +1,19 @@
+contents:
+  repositories:
+    - https://dl-cdn.alpinelinux.org/alpine/edge/main
+    # Note: pixi is currently only available in from the testing repository.
+    #  See: https://pkgs.alpinelinux.org/package/edge/testing/x86/pixi
+    - https://dl-cdn.alpinelinux.org/alpine/edge/testing
+  packages:
+    - alpine-base
+    - pixi
+
+archs:
+  - x86
+  - aarch64
+
+entrypoint:
+  command: /bin/sh -l
+
+environment:
+  PATH: /usr/sbin:/sbin:/usr/bin:/bin
