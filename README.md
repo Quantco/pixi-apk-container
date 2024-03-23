@@ -1,5 +1,7 @@
 # pixi-apko-container
 
+Unfortunately, this container is not functional. See thread [here](https://quantcoteam.slack.com/archives/C9Y5AURA6/p1711190806792339).
+
 A container image for Pixi, built with [Apko](https://github.com/chainguard-dev/apko). Using Apko brings many benefits:
 
 - Fully reproducible by default. Run apko twice and you will get exactly the same binary.
